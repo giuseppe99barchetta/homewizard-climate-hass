@@ -1,5 +1,7 @@
 """Climate platform for homewizard_climate."""
 import logging
+import os
+import sys
 import time
 
 from homewizard_climate_ws.model.climate_device_state import (
@@ -10,6 +12,7 @@ from homewizard_climate_ws.model.climate_device import (
 )
 
 from homewizard_climate_ws.ws.hw_websocket import HomeWizardClimateWebSocket
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 from homeassistant.components.climate import (
     FAN_HIGH,

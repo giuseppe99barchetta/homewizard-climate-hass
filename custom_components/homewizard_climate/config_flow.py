@@ -3,9 +3,12 @@ from __future__ import annotations
 
 from collections.abc import Mapping
 import logging
+import os
+import sys
 from typing import Any
 
 from homewizard_climate_ws.api.api import InvalidHomewizardAuth
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 import voluptuous as vol
 
 from homeassistant import config_entries

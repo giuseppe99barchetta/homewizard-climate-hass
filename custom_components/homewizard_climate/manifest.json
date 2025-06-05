@@ -2,7 +2,7 @@
   "domain": "homewizard_climate",
   "name": "Homewizard Climate",
   "config_flow": true,
-  "documentation": "https://www.home-assistant.io/integrations/homewizard_climate",
+  "documentation": "https://github.com/giuseppe99barchetta/homewizard-climate-hass",
   "requirements": ["homewizard-climate-ws==0.0.26"],
   "codeowners": ["@mepla", "@dennis1804"],
   "version": "1.0.8",
