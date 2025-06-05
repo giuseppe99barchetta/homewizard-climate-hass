@@ -3,7 +3,8 @@
   "name": "Homewizard Climate",
   "config_flow": true,
   "documentation": "https://github.com/giuseppe99barchetta/homewizard-climate-hass",
-  "codeowners": ["@mepla", "@dennis1804"],
-  "version": "1.0.8",
+  "requirements": [],
+  "codeowners": ["@giuseppe99barchetta","@mepla", "@dennis1804"],
+  "version": "1.0.9",
   "iot_class": "cloud_push"
 }
