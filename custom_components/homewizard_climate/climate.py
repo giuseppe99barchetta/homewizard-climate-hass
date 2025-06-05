@@ -72,11 +72,9 @@ class HomeWizardClimateEntity(ClimateEntity):
             self._isHEATER = True
         if self._device_web_socket.device.type == HomeWizardClimateDeviceType.DEHUMIDIFIER:
             self._isDEHUMID = True
-#       doesn't seem to work with ["homewizard-climate-ws==0.0.26"],.
-#        if self._device_web_socket.device.type == HomeWizardClimateDeviceType.AIRCOOLER:
-#            self._isAIRCOOLER = True
+        if self._device_web_socket.device.type == HomeWizardClimateDeviceType.AIRCOOLER:
+            self._isAIRCOOLER = True
         
-        # see, https://developers.home-assistant.io/blog/2024/01/24/climate-climateentityfeatures-expanded
         self._enable_turn_on_off_backwards_compatibility = False
 
     @property
