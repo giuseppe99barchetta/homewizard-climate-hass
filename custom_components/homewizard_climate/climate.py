@@ -64,6 +64,9 @@ class HomeWizardClimateEntity(ClimateEntity):
         self._logger = logging.getLogger(
             f"{__name__}.{self._device_web_socket.device.identifier}"
         )
+        
+        self._logger.info(f"Device type detected: {self._device_web_socket.device.type}")
+        
         if self._device_web_socket.device.type == HomeWizardClimateDeviceType.INFRAREDHEATER:
             self._isIR = True
         if self._device_web_socket.device.type == HomeWizardClimateDeviceType.FAN:
@@ -72,8 +75,8 @@ class HomeWizardClimateEntity(ClimateEntity):
             self._isHEATER = True
         if self._device_web_socket.device.type == HomeWizardClimateDeviceType.DEHUMIDIFIER:
             self._isDEHUMID = True
-        if self._device_web_socket.device.type == HomeWizardClimateDeviceType.AIRCOOLER:
-            self._isAIRCOOLER = True
+        #if self._device_web_socket.device.type == HomeWizardClimateDeviceType.AIRCOOLER:
+        #    self._isAIRCOOLER = True
         
         self._enable_turn_on_off_backwards_compatibility = False
 
