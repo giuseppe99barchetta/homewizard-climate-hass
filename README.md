@@ -1,18 +1,38 @@
-# Homewizard Climate integration for Homeassistant
 
-## installation
-you can add this repo to your homeassistant by installing HACS and choosing integrations, install a custom repository and paste this url.
+<p align="center">
+  <img src="https://github.com/giuseppe99barchetta/homewizard-climate-hass/blob/master/images/icon.png" alt="Homewizard Climate Icon" width="80" />
+</p>
 
-![image](https://user-images.githubusercontent.com/15904064/216421839-c1feff4c-36c4-4e8c-9df4-9b4eb7c52a5d.png)
+# Homewizard Climate Integration for Home Assistant
 
-after that you can add the integration to Homeassistant and input your username and password.
+## Overview
+This custom integration allows you to control your Homewizard Climate devices directly from Home Assistant. Easily manage your heating and fan devices with full support for multiple device types.
 
-## supported devices
-- Fan Heater
-- IR Panel
-- Glass panel Heater
-- Fan
+---
 
+## Installation
 
-## my device isn't supported
-If your device is supported in the Homewizard climate app but not yet in this integration please create an issue.
+1. Make sure you have [HACS (Home Assistant Community Store)](https://hacs.xyz/) installed.
+2. In HACS, go to **Integrations**.
+3. Click on **Install a custom repository**.
+4. Paste the repository URL:  
+   `https://github.com/giuseppe99barchetta/homewizard-climate-hass`
+5. Install the integration.
+6. Restart Home Assistant.
+7. Add the integration from **Settings > Devices & Services**, then enter your Homewizard username and password.
+
+---
+
+## Supported Devices
+
+- Fan Heater  
+- IR Panel  
+- Glass Panel Heater  
+- Fan  
+
+---
+
+## Device Not Supported?
+
+If your device is supported by the official Homewizard Climate app but not yet by this integration, please [open an issue](https://github.com/giuseppe99barchetta/homewizard-climate-hass/issues) on the GitHub repository. Your feedback helps improve support for more devices!
+
