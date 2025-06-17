@@ -3,8 +3,8 @@ import os
 
 import requests
 
-from .const import API_LOGIN, API_V1_PATH, API_DEVICES
-from .model.climate_device import (
+from ..const import API_LOGIN, API_V1_PATH, API_DEVICES
+from model.climate_device import (
     HomeWizardClimateDevice,
     HomeWizardClimateDeviceType,
 )
