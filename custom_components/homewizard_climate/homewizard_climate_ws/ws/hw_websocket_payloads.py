@@ -1,8 +1,8 @@
 import json
 from enum import Enum
 
-from homewizard_climate_ws.api.api import HomeWizardClimateApi
-from homewizard_climate_ws.model.climate_device import (
+from api.api import HomeWizardClimateApi
+from model.climate_device import (
         HomeWizardClimateDevice,
         HomeWizardClimateDeviceType
     )

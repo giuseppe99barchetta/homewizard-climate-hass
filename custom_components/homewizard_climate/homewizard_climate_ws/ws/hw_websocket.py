@@ -9,17 +9,17 @@ from enum import Enum
 import websocket
 from websocket._exceptions import WebSocketConnectionClosedException
 
-from homewizard_climate_ws.api.api import HomeWizardClimateApi
-from homewizard_climate_ws.const import API_WS_PATH
-from homewizard_climate_ws.model.climate_device import (
+from api.api import HomeWizardClimateApi
+from const import API_WS_PATH
+from model.climate_device import (
     HomeWizardClimateDevice,
 )
-from homewizard_climate_ws.model.climate_device_state import (
+from model.climate_device_state import (
     HomeWizardClimateDeviceState,
     default_state,
     diff_states,
 )
-from homewizard_climate_ws.ws.hw_websocket_payloads import (
+from ws.hw_websocket_payloads import (
     HomeWizardClimateWSPayloads,
 )
 

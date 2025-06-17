@@ -36,7 +36,6 @@ habluetooth==3.49.0
 hass-nabucasa==0.78.0
 home-assistant-bluetooth==1.12.0
 homeassistant==2024.3.3
-homewizard_climate_ws==0.0.27
 httpcore==1.0.9
 httpx==0.27.0
 idna==3.10

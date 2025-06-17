@@ -2,8 +2,8 @@ import logging
 import os
 import time
 
-from homewizard_climate_ws.api.api import HomeWizardClimateApi
-from homewizard_climate_ws.ws.hw_websocket import HomeWizardClimateWebSocket
+from .api.api import HomeWizardClimateApi
+from .ws.hw_websocket import HomeWizardClimateWebSocket
 
 logging.basicConfig(level=logging.DEBUG)
 
