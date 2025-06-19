@@ -75,7 +75,7 @@ class HomeWizardClimateApi:
                 if dev_dict.get("type") in supported_types:
                     devices_list.append(HomeWizardClimateDevice.from_dict(dev_dict))
                 else:
-                    _LOGGER.warning(f"Dispositivo non supportato ignorato: {dev_dict.get('type')}")
+                    _LOGGER.debug(f"Dispositivo non supportato ignorato: {dev_dict.get('type')}")
             _LOGGER.debug(
                 f"Creating {len(devices_list)} device(s) for user "
                 f"({self._username}): {[x.identifier for x in devices_list]}"
